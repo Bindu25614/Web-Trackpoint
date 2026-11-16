@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order | TrackPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📦 TrackPoint</h1>
+    <p>Smart Order and Delivery Management</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="order.html">Place Order</a>
+    <a href="track.html">Track Order</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+<section class="page-banner">
+    <h2>Place Your Order</h2>
+    <p>Enter your details and get your package delivered safely.</p>
+</section>
+
+<section class="order-card">
+    <h2>Customer Information</h2>
+
+    <form id="orderForm">
+
+        <label>Customer Name</label>
+        <input id="customer" placeholder="Enter your full name" required>
+
+        <label>Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter 10-digit number" required>
+
+        <label>Product / Items</label>
+        <input id="items" placeholder="Enter your items" required>
+
+        <label>Delivery Pincode</label>
+        <input id="pincode" placeholder="Enter 6-digit pincode" required>
+
+        <button type="submit">Confirm My Order →</button>
+
+    </form>
+
+    <div id="orderMessage"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

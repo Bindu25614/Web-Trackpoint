@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | TrackPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📦 TrackPoint</h1>
+    <p>Order Management Dashboard</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="order.html">Place Order</a>
+    <a href="track.html">Track Order</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+<section class="page-banner">
+    <h2>Admin Dashboard</h2>
+    <p>Manage orders and monitor delivery progress.</p>
+</section>
+
+<section class="stats-section">
+    <h2>Order Overview</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card total-card">
+            <div class="stat-icon">📦</div>
+            <h3 id="totalOrders">0</h3>
+            <p>Total Orders</p>
+        </div>
+
+        <div class="stat-card delivered-card">
+            <div class="stat-icon">✅</div>
+            <h3 id="deliveredOrders">0</h3>
+            <p>Delivered Orders</p>
+        </div>
+
+        <div class="stat-card progress-card">
+            <div class="stat-icon">🚚</div>
+            <h3 id="progressOrders">0</h3>
+            <p>In Progress</p>
+        </div>
+
+        <div class="stat-card delayed-card">
+            <div class="stat-icon">⏰</div>
+            <h3 id="delayedOrders">0</h3>
+            <p>Delayed Orders</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="order-card">
+    <h2>Update Order Status</h2>
+
+    <input id="adminId" placeholder="Enter Order ID">
+
+    <button onclick="updateStatus()">Update Status →</button>
+
+    <div id="adminResult"></div>
+</section>
+
+<section class="order-card">
+    <h2>Delayed Orders</h2>
+
+    <button onclick="showDelayedOrders()">View Delayed Orders</button>
+
+    <div id="delayedResult"></div>
+</section>
+
+<section class="order-card">
+    <h2>Customer Order History</h2>
+
+    <input id="historyPhone" placeholder="Enter Customer Phone Number">
+
+    <button onclick="showHistory()">View History</button>
+
+    <div id="historyResult"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

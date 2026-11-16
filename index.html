@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackPoint - Order Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <header>
+        <h1>📦 TrackPoint</h1>
+        <p>Order Lifecycle and Delivery Tracking System</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#place">Place Order</a>
+        <a href="#track">Track Order</a>
+        <a href="#admin">Admin</a>
+        <a href="#history">Order History</a>
+    </nav>
+
+
+    <section id="home" class="hero">
+
+    <div class="hero-content">
+        <span class="hero-tag">📦 SMART DELIVERY TRACKING</span>
+
+        <h2>Your Package.<br>
+        Your Journey.<br>
+        <span>Tracked Every Step.</span></h2>
+
+        <p>
+            Welcome to TrackPoint! Track your orders in real time
+            and stay updated at every step of delivery.
+        </p>
+
+        <div class="hero-search">
+            <input type="text"
+                   id="homeTrackId"
+                   placeholder="Enter your Order ID">
+
+            <button onclick="quickTrack()">
+                Track My Order →
+            </button>
+        </div>
+
+        <div class="hero-features">
+            <span>✓ Easy Tracking</span>
+            <span>✓ Live Status Updates</span>
+            <span>✓ Reliable Delivery</span>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="truck-circle">
+            <div class="truck">🚚</div>
+        </div>
+
+        <div class="delivery-card">
+            <span>📍 DELIVERY UPDATE</span>
+            <h3>Your order is on its way!</h3>
+            <p>Track every step with TrackPoint.</p>
+            <div class="mini-progress">
+                <div></div>
+            </div>
+            <small>Fast • Safe • Reliable</small>
+        </div>
+    </div>
+
+</section>
+
+
+    <section id="place">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <input id="customer" placeholder="Customer Name" required>
+            <input id="phone" placeholder="Phone Number" required>
+            <input id="items" placeholder="Enter Items" required>
+            <input id="pincode" placeholder="Delivery Pincode" required>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="orderMessage"></p>
+    </section>
+
+    <section id="track">
+        <h2>Track Your Order</h2>
+        <input id="trackId" placeholder="Enter Order ID">
+        <button onclick="trackOrder()">Track Order</button>
+        <div id="trackingResult"></div>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Dashboard</h2>
+        <input id="adminId" placeholder="Enter Order ID">
+        <button onclick="updateStatus()">Update Status</button>
+        <div id="adminResult"></div>
+    </section>
+      
+    <section id="delayed">
+        <h2>Delayed Orders</h2>
+
+        <button onclick="showDelayedOrders()">
+        Check Delayed Orders
+        </button>
+
+        <div id="delayedResult"></div>
+    </section>
+
+    <section id="history">
+        <h2>Customer Order History</h2>
+        <input id="historyPhone" placeholder="Enter Customer Phone">
+        <button onclick="showHistory()">View History</button>
+        <div id="historyResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+<body class="home-page">
+</html>
+body{
+    background-colour:lightblue
+}

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order | TrackPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📦 TrackPoint</h1>
+    <p>Your Package. Your Journey.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="order.html">Place Order</a>
+    <a href="track.html">Track Order</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+<section class="page-banner">
+    <h2>Track Your Package</h2>
+    <p>Stay updated at every step of your delivery.</p>
+</section>
+
+<section class="order-card">
+    <h2>Enter Your Order ID</h2>
+
+    <input id="trackId" placeholder="Example: TP1001">
+
+    <button onclick="trackOrder()">Track My Order →</button>
+
+    <div id="trackingResult"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
